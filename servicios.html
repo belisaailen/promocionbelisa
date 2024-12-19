@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Jokasta Carolina Perdomo Martinez</title>  
+    <link rel="icon" href="icons/hembra.png" type="image/x-icon">  
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand"><img src="icons/hembra.png" alt="Icono" style="width: 24px; height: 24px; margin-right: 8px;">
+                Servicios</a>
+            <button class="navbar-toggler" id="navbar-toggler">
+                &#9776;
+            </button>
+            <div class="navbar-menu" id="navbar-menu">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre Mí</a>
+                <a href="curriculum.html">Currículum</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>    
+
+    <div class="container mt-5" id="servicios">
+            <p class="text-center service-description">Ofrezco una variedad de servicios en desarrollo de software,
+            diseñados para satisfacer las necesidades de clientes y empleadores en diferentes sectores. A continuación,
+            encontrarás una lista de los servicios que ofrezco y cómo pueden ayudarte a alcanzar tus objetivos
+            tecnológicos.</p>
+        
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="card-container">
+                <div class="section-box">
+                    <h3>Desarrollo de Aplicaciones Web</h3>
+                    <p>Construyo aplicaciones web modernas y escalables utilizando tecnologías como Java, Spring Boot,
+                        Angular, Bootstrap, entre otras. Ya sea que necesites una aplicación completa o mejoras en una
+                        existente, puedo ayudarte a implementar soluciones eficaces que mejoren tu presencia online.</p>
+                    <img src="icons/java.png" alt="Foto Autor" class="service-icon">   
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-container">
+                <div class="section-box">
+                    <h3>Integración de APIs y Microservicios</h3>
+                    <p>Ofrezco servicios de integración de APIs y desarrollo de microservicios para crear sistemas modulares
+                        y escalables. Mi experiencia en diseño e implementación de servicios RESTful garantiza que tus
+                        aplicaciones puedan comunicarse de manera eficiente con otros sistemas.</p>
+                    <img src="icons/apiIntegration.jpeg" alt="Foto Autor" class="service-icon">   
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-container">
+                <div class="section-box">
+                    <h3>Automatización de Procesos</h3>
+                    <p>Implemento soluciones de automatización de procesos de negocio para mejorar la eficiencia operativa.
+                        Ya sea a través de scripts personalizados o de la integración con sistemas existentes, puedo
+                        ayudarte a reducir costos y aumentar la productividad.</p>
+                        <img src="icons/automatizacion.jpeg" alt="Foto Autor" class="service-icon">      
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card-container">
+                <div class="section-box">
+                    <h3>Consultoría y Asesoramiento Técnico</h3>
+                    <p>Ofrezco servicios de consultoría técnica para proyectos de desarrollo de software. Ya sea que estés
+                        comenzando un nuevo proyecto o necesites mejorar uno existente, puedo asesorarte en las mejores
+                        prácticas y tecnologías para asegurar el éxito de tu iniciativa.</p>
+                        <img src="icons/consultoria.webp" alt="Foto Autor" class="service-icon">      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Belisa Ailen Gonzalez. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        document.getElementById("navbar-toggler").addEventListener("click", function() {
+            var menu = document.getElementById("navbar-menu");
+            menu.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

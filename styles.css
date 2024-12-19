@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: sans-serif, Arial;
+    background-color: rgb(222, 191, 188);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+}
+
+.navbar {
+    background-color:rgb(222, 191, 188); /* Color con 80% de opacidad */
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: #FFF5EE; 
+    border-radius: 10px;
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que las tarjetas se envuelvan si el espacio es insuficiente */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+/* Clase extendida para el formulario dentro de una sección-box */
+.section-box.custom-form {
+    background-color: rgba(59, 59, 59, 0.8); /* Color de fondo oscuro */
+    color: #fff; /* Color de texto claro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Hace que ambos contenedores ocupen la misma cantidad de espacio */
+}
+
+.section-box.custom-form .form-group {
+    margin-bottom: 15px; /* Espacio entre los campos del formulario */
+}
+title{
+    color:rgba(209, 47, 168, 0.8);
+}
+.section-box.custom-form .form-control {
+    border-radius: 25px; /* Bordes ovalados para inputs y textarea */
+    border: 1px solid rgba(59, 59, 59, 0.8); /* Borde del input */
+    padding: 10px; /* Espaciado interno del input */
+    font-size: 1em; /* Tamaño de fuente del input */
+    background-color:rgba(59, 59, 59, 0.8); /* Color de fondo de los inputs */
+    color:white; /* Color del texto dentro de los inputs */
+}
+
+.section-box.custom-form .form-control::placeholder {
+    color: #888; /* Color del texto del placeholder */
+    font-style: italic; /* Estilo en cursiva para el placeholder */
+}
+
+.section-box.custom-form .btn-primary {
+    background-color:rgb(24, 49, 83,0.8); /* Color de fondo del botón */
+    border: none; /* Eliminar borde del botón */
+    border-radius: 25px; /* Bordes ovalados del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1em; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.section-box.custom-form .btn-primary:hover {
+    background-color: #FFF5EE; /* Color de fondo del botón al pasar el cursor */
+    color:#333;
+}
+
+.image-container {
+    display: flex;            /* Habilita flexbox */
+    justify-content: center;  /* Centra la imagen horizontalmente */
+    align-items: center;      /* Centra la imagen verticalmente */
+    max-width: 100%;          /* Limita el tamaño máximo del contenedor al 100% del ancho disponible */
+    height: auto;             /* Ajusta la altura automáticamente */
+    overflow: hidden;         /* Evita el desbordamiento */
+}
+
+.programmer-image {
+    max-width: 100%;          /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;             /* Mantiene la relación de aspecto correcta */
+    object-fit: cover;        /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+.card-container {
+    flex: 1 1 calc(50% - 20px); /* Ajusta el ancho de las tarjetas y considera el espacio entre ellas */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.navbar-menu a:hover {
+    background-color: rgb(24, 49, 83);
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#biografia {
+    position: relative;
+}
+
+#biografia h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono-biografia {
+    width: 50px; /* Ajusta el tamaño del ícono */
+    height: 50px; /* Ajusta el tamaño del ícono */
+    margin-right: 2%;
+}
+.icono-formacion{
+    width: 2rem; /* Ajusta el tamaño del ícono */
+    height: 2rem; /* Ajusta el tamaño del ícono */
+    margin-left: 10%;
+    margin-right: 0;
+} 
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las dos columnas */
+    margin-bottom: 40px;
+}
+
+.section-box {
+    background-color:rgb(24, 49, 83,0.8); /* Color de fondo oscuro */
+    color: #fff; /* Color de texto claro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Hace que ambos contenedores ocupen la misma cantidad de espacio */
+}
+
+.curriculum-section {
+    flex: 2; /* Asigna más espacio a la sección de "Currículum" */
+}
+
+.pdf-section {
+    flex: 2; /* Asigna menos espacio a la sección de "Currículum Online" */
+}
+
+.download-button{
+    margin-top: 2rem;
+}
+/* Aplica a todos los enlaces del documento */
+a {
+    color: #fff; /* Cambia este color al que prefieras */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s; /* Añade una transición suave para el hover */
+}
+
+/* Cambia el color del enlace al pasar el cursor */
+a:hover {
+    color: rgb(196, 176, 248); /* Cambia este color al que prefieras para el hover */
+}
+.icono-pdf{
+    width: 1rem;
+    height: 1rem; /* Ajusta el tamaño del ícono */ 
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.icono-ubi{
+    width:5%;
+    height:5%; /* Ajusta el tamaño del ícono */ 
+    margin-right: 3%;
+    margin-top: 3%;
+}
+.btn-download {
+    background-color: #FFF5EE;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #ddd;
+}
+/* Estilos adicionales para las tarjetas */
+.card-container {
+    flex: 1 1 45%; /* Las tarjetas ocupan el 45% del ancho de la fila, dejando espacio para el margen */
+    margin: 10px; /* Espacio entre tarjetas */
+    display: flex;
+    align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+/* Estilo para la fila de tarjetas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-icon {
+    display: block; /* Necesario para centrar la imagen */
+    margin: 20px auto; /* Centra la imagen horizontalmente y agrega espacio arriba y abajo */
+    width: 15rem; /* Ajusta el tamaño según sea necesario */
+    height:10rem; /* Ajusta el tamaño según sea necesario */
+    border-radius: 10%; /* Crea un borde ovalado (círculo en este caso) */
+    border: 2px solid #FFF5EE; /* Opcional: agrega un borde de color claro */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section-box {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    /* Navbar para móviles */
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3B3B3B;
+        border-top: 1px solid #575757;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-menu a {
+        padding: 15px;
+        border-bottom: 1px solid #575757;
+    }
+
+    .navbar-menu a:last-child {
+        border-bottom: none;
+    }
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    border-radius: 40%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra añadida */
+}
+
+.section-box {
+    background-color: rgba(59, 59, 59, 0.8); /* Color de fondo oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #FFF5EE; 
+}
+
+.section-box h3 {
+    margin-top: 0; /* Elimina el margen superior del título */
+}
+
+.section-box ul {
+    padding-left: 20px; /* Agrega espacio a la izquierda de los ítems de lista */
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(103, 65, 217,0.8); /* Color con 80% de opacidad */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    left: 0;
+    height: 5%;
+}
